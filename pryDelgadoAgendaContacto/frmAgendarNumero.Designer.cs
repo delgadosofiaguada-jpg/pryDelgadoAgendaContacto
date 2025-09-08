@@ -36,8 +36,8 @@
             mskNumero = new MaskedTextBox();
             cmdCancelar = new Button();
             lstbLista = new ListBox();
-            lblFechaYHora = new Label();
             lblCantidadCon = new Label();
+            lblFechaHora = new Label();
             SuspendLayout();
             // 
             // cmdRegistrar
@@ -122,16 +122,6 @@
             lstbLista.Size = new Size(291, 89);
             lstbLista.TabIndex = 8;
             // 
-            // lblFechaYHora
-            // 
-            lblFechaYHora.AutoSize = true;
-            lblFechaYHora.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblFechaYHora.Location = new Point(314, 476);
-            lblFechaYHora.Name = "lblFechaYHora";
-            lblFechaYHora.Size = new Size(84, 17);
-            lblFechaYHora.TabIndex = 10;
-            lblFechaYHora.Text = "Fecha y Hora";
-            // 
             // lblCantidadCon
             // 
             lblCantidadCon.AutoSize = true;
@@ -140,13 +130,21 @@
             lblCantidadCon.Size = new Size(0, 15);
             lblCantidadCon.TabIndex = 12;
             // 
+            // lblFechaHora
+            // 
+            lblFechaHora.AutoSize = true;
+            lblFechaHora.Location = new Point(321, 514);
+            lblFechaHora.Name = "lblFechaHora";
+            lblFechaHora.Size = new Size(0, 15);
+            lblFechaHora.TabIndex = 13;
+            // 
             // frmAgendarNumero
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(505, 579);
+            Controls.Add(lblFechaHora);
             Controls.Add(lblCantidadCon);
-            Controls.Add(lblFechaYHora);
             Controls.Add(lstbLista);
             Controls.Add(cmdCancelar);
             Controls.Add(mskNumero);
@@ -171,7 +169,7 @@
         private MaskedTextBox mskNumero;
         private Button cmdCancelar;
         private ListBox lstbLista;
-        private Label lblFechaYHora;
         private Label lblCantidadCon;
+        private Label lblFechaHora;
     }
 }

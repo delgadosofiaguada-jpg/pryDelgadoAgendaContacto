@@ -9,6 +9,8 @@ namespace pryDelgadoAgendaContacto
         string vContacto = "";
         string vNumero = "";
         int vContador = 0;
+        DateTime vFecha=DateTime.Now;
+
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -47,7 +49,8 @@ namespace pryDelgadoAgendaContacto
             txtContacto.Text = "";
             mskNumero.Text = "";
             vContador = vContador + 1;
-            lblCantidadCon.Text = "Cantidad de Contactos: "+vContador;
+            lblCantidadCon.Text = "Cantidad de Contactos: " + vContador;
+            lblFechaHora.Text = "Fecha y Hora: " + vFecha;
         }
 
         private void cmdCancelar_Click(object sender, EventArgs e)
@@ -55,5 +58,7 @@ namespace pryDelgadoAgendaContacto
             txtContacto.Text = "";
             mskNumero.Text = "";
         }
+
+        
     }
 }
