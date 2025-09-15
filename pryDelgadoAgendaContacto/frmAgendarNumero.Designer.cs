@@ -155,6 +155,7 @@
             Controls.Add(cmdRegistrar);
             Name = "frmAgendarNumero";
             Text = "Inicio";
+            Load += frmAgendarNumero_Load;
             ResumeLayout(false);
             PerformLayout();
         }
