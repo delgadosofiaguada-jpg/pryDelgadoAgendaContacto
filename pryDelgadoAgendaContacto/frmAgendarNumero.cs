@@ -6,6 +6,7 @@ namespace pryDelgadoAgendaContacto
         {
             InitializeComponent();
         }
+        
         string vContacto = "";
         string vNumero = "";
         int vContador = 0;
@@ -51,6 +52,8 @@ namespace pryDelgadoAgendaContacto
             vContador = vContador + 1;
             lblCantidadCon.Text = "Cantidad de Contactos: " + vContador;
             lblFechaHora.Text = "Fecha y Hora: " + vFecha;
+            frmContactos ventanaBienvenida = new frmContactos();
+            ventanaBienvenida.ShowDialog();
         }
 
         private void cmdCancelar_Click(object sender, EventArgs e)
