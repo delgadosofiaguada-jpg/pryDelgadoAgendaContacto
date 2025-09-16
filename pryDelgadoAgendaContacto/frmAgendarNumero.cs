@@ -12,11 +12,6 @@ namespace pryDelgadoAgendaContacto
         int vContador = 0;
         DateTime vFecha = DateTime.Now;
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
 
         private void txtContacto_TextChanged(object sender, EventArgs e)
         {
@@ -60,11 +55,6 @@ namespace pryDelgadoAgendaContacto
         {
             txtContacto.Text = "";
             mskNumero.Text = "";
-        }
-
-        private void frmAgendarNumero_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
