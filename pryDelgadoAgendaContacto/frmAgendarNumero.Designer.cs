@@ -81,7 +81,7 @@
             lblTitulo.Size = new Size(90, 25);
             lblTitulo.TabIndex = 3;
             lblTitulo.Text = "AGENDA";
-            lblTitulo.Click += label3_Click;
+            //lblTitulo.Click += label3_Click;
             // 
             // txtContacto
             // 
@@ -155,7 +155,7 @@
             Controls.Add(cmdRegistrar);
             Name = "frmAgendarNumero";
             Text = "Inicio";
-            Load += frmAgendarNumero_Load;
+            //Load += frmAgendarNumero_Load;
             ResumeLayout(false);
             PerformLayout();
         }
