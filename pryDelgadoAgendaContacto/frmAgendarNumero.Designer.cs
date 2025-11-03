@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAgendarNumero));
             cmdRegistrar = new Button();
             lblContacto = new Label();
             lblNumero = new Label();
@@ -81,7 +82,6 @@
             lblTitulo.Size = new Size(90, 25);
             lblTitulo.TabIndex = 3;
             lblTitulo.Text = "AGENDA";
-            //lblTitulo.Click += label3_Click;
             // 
             // txtContacto
             // 
@@ -153,9 +153,9 @@
             Controls.Add(lblNumero);
             Controls.Add(lblContacto);
             Controls.Add(cmdRegistrar);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmAgendarNumero";
             Text = "Inicio";
-            //Load += frmAgendarNumero_Load;
             ResumeLayout(false);
             PerformLayout();
         }
