@@ -33,18 +33,28 @@ namespace pryDelgadoAgendaContacto
 
         private void cmdSiguiente_Click(object sender, EventArgs e)
         {
-            indice++;
-            lblDato.Text = vecNombre[indice];
-            if (vecNombre.Length <= (indice + 1))
+            if (indice < vecNombre.Length - 1)
             {
-                cmdSiguiente.Enabled = false;
+                indice++;
+                lblDato.Text = vecNombre[indice];
             }
+
+            // Actualizar estados de botones
+            cmdSiguiente.Enabled = (indice < vecNombre.Length - 1);
+            cmdAnterior.Enabled = (indice > 0);
         }
 
         private void cmdAnterior_Click(object sender, EventArgs e)
         {
-            indice--;
-            lblDato.Text = vecNombre[indice];
+            if (indice > 0)
+            {
+                indice--;
+                lblDato.Text = vecNombre[indice];
+            }
+
+            // Actualizar estados de botones
+            cmdAnterior.Enabled = (indice > 0);
+            cmdSiguiente.Enabled = (indice < vecNombre.Length - 1);
         }   
     }
 }
