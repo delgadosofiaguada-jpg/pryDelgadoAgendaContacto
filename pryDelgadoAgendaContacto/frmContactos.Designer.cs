@@ -40,9 +40,10 @@
             // cmdAnterior
             // 
             cmdAnterior.Font = new Font("Arial", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cmdAnterior.Location = new Point(105, 255);
+            cmdAnterior.Location = new Point(37, 285);
+            cmdAnterior.Margin = new Padding(3, 4, 3, 4);
             cmdAnterior.Name = "cmdAnterior";
-            cmdAnterior.Size = new Size(83, 31);
+            cmdAnterior.Size = new Size(95, 41);
             cmdAnterior.TabIndex = 0;
             cmdAnterior.Text = "Anterior";
             cmdAnterior.UseVisualStyleBackColor = true;
@@ -52,9 +53,9 @@
             // 
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitulo.Location = new Point(41, 28);
+            lblTitulo.Location = new Point(12, 31);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(123, 20);
+            lblTitulo.Size = new Size(157, 25);
             lblTitulo.TabIndex = 2;
             lblTitulo.Text = "Buscar Contacto";
             lblTitulo.Click += label1_Click;
@@ -62,9 +63,10 @@
             // cmdSiguiente
             // 
             cmdSiguiente.Font = new Font("Arial", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cmdSiguiente.Location = new Point(194, 255);
+            cmdSiguiente.Location = new Point(139, 285);
+            cmdSiguiente.Margin = new Padding(3, 4, 3, 4);
             cmdSiguiente.Name = "cmdSiguiente";
-            cmdSiguiente.Size = new Size(98, 31);
+            cmdSiguiente.Size = new Size(112, 41);
             cmdSiguiente.TabIndex = 5;
             cmdSiguiente.Text = "Siguiente";
             cmdSiguiente.UseVisualStyleBackColor = true;
@@ -74,33 +76,37 @@
             // 
             lblDato.AutoSize = true;
             lblDato.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblDato.Location = new Point(15, 34);
+            lblDato.Location = new Point(17, 45);
             lblDato.Name = "lblDato";
-            lblDato.Size = new Size(0, 25);
+            lblDato.Size = new Size(0, 32);
             lblDato.TabIndex = 6;
             // 
             // grbContacto
             // 
             grbContacto.Controls.Add(lblDato);
             grbContacto.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            grbContacto.Location = new Point(41, 86);
+            grbContacto.Location = new Point(28, 106);
+            grbContacto.Margin = new Padding(3, 4, 3, 4);
             grbContacto.Name = "grbContacto";
-            grbContacto.Size = new Size(200, 100);
+            grbContacto.Padding = new Padding(3, 4, 3, 4);
+            grbContacto.Size = new Size(350, 147);
             grbContacto.TabIndex = 7;
             grbContacto.TabStop = false;
             grbContacto.Text = "Contacto";
             // 
             // frmContactos
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(419, 347);
+            ClientSize = new Size(390, 360);
             Controls.Add(cmdSiguiente);
             Controls.Add(lblTitulo);
             Controls.Add(cmdAnterior);
             Controls.Add(grbContacto);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmContactos";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmContactos";
             Load += frmContactos_Load;
             grbContacto.ResumeLayout(false);
